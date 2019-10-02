@@ -21,5 +21,13 @@ public class Histogram {
     public int getCount(int value) {
         return counts.get(value);
     }
+
+    void show() {
+        for (int value : this.getValue()) {
+            System.out.println(value + " " + this.getCount(value));
+        }
+    
+    
+    }
     
 }
